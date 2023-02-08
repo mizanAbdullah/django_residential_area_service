@@ -1,0 +1,87 @@
+{% extends "main/base.html"%}
+{% block title %} Home {% endblock %}
+{% load static %}
+{% block content %}
+
+
+    <section class="property-section latest-property-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="section-title">
+                        <h4>Latest Rent Post</h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row property-filter">
+                <div class="col-lg-4 col-md-6 mix all house">
+                    <div class="property-item">
+                        <div class="pi-pic set-bg" data-setbg={% static "main/img/ren1.jpg" %}>
+                            <div class="label">For rent</div>
+                        </div>
+                        <div class="pi-text">
+                            
+                            <div class="pt-price">20000tk<span>/month</span></div>
+                            <h5><a href="#">Rent house in Khulshi</a></h5>
+                            <p><span class="icon_pin_alt"></span> Khulshi,Chittagong</p>
+                            <ul>
+                                <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                <li><i class="fa fa-bathtub"></i> 03</li>
+                                <li><i class="fa fa-bed"></i> 05</li>
+                               
+                            </ul>
+                   
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mix all house">
+                    <div class="property-item">
+                        <div class="pi-pic set-bg" data-setbg={% static "main/img/rent3.jpeg" %}>
+                            <div class="label">For rent</div>
+                        </div>
+                        <div class="pi-text">
+                          
+                            <div class="pt-price">18000tk<span>/month</span></div>
+                            <h5><a href="#">Rent house in chawkbazar</a></h5>
+                            <p><span class="icon_pin_alt"></span> chawkbazar,Chittagong</p>
+                            <ul>
+                                <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                <li><i class="fa fa-bathtub"></i> 03</li>
+                                <li><i class="fa fa-bed"></i> 05</li>
+                               
+                            </ul>
+                         
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mix all house">
+                    <div class="property-item">
+                        <div class="pi-pic set-bg" data-setbg={% static "main/img/ren1.jpg" %}>
+                            <div class="label">For rent</div>
+                        </div>
+                        <div class="pi-text">
+                            
+                            <div class="pt-price">13000tk<span>/month</span></div>
+                            <h5><a href="#">Rent house in abashik</a></h5>
+                            <p><span class="icon_pin_alt"></span> Abashik,Chittagong</p>
+                            <ul>
+                                <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                <li><i class="fa fa-bathtub"></i> 03</li>
+                                <li><i class="fa fa-bed"></i> 05</li>
+                              
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+{% endblock %}

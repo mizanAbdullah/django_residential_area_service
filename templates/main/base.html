@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aler Template">
+    <meta name="keywords" content="Aler, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %} {% endblock %} |  Residential Area Service</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href={% static "main/css/bootstrap.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "main/css/font-awesome.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "main/css/elegant-icons.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "main/css/jquery-ui.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "main/css/nice-select.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "main/css/owl.carousel.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "main/css/magnific-popup.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "main/css/slicknav.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "main/css/style.css" %} type="text/css">
+    {% block head %} {% endblock %}
+</head>
+
+<body>
+
+    <!-- Offcanvas Menu Wrapper Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <span class="icon_close"></span>
+        </div>
+        <div class="logo">
+            <a href="{% url 'index' %}">
+                <img src={% static "main/img/logo.png" %} alt="">
+            </a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="om-widget">
+
+        </div>
+        <div class="om-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu Wrapper End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="hs-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            
+                            <h5 style="text-transform: uppercase; color: lightseagreen;">Residential Area Services</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="ht-widget">
+                            <ul>
+                                <li><i class="icon_mail_alt"></i> support@gmail.com</li>
+                               
+                            </ul>
+                  
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas-open">
+                    <span class="icon_menu"></span>
+                </div>
+            </div>
+        </div>
+        <div class="hs-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <nav class="nav-menu">
+                            <ul>
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="{% url 'user_login' %}">Login</a></li>
+                                <li><a href="{% url 'rent' %}">Rent</a>
+                            
+                                </li>
+                                <li><a href="{% url 'teacher' %}">Teacher</a></li>
+                                <li><a href="{% url 'about' %}">About</a></li>
+                                <li><a href="{% url 'tution' %}">Tution</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+         
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    {% block content %}  {% endblock %}
+
+
+        <!-- Footer Section Begin -->
+        <footer class="footer-section">
+            <div class="container">
+
+                <div class="copyright-text">
+                    <p>
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  Residential area services
+      </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+    
+        <!-- Js Plugins -->
+        <script src={% static "main/js/jquery-3.3.1.min.js" %}></script>
+        <script src={% static "main/js/bootstrap.min.js" %}></script>
+        <script src={% static "main/js/jquery.magnific-popup.min.js" %}></script>
+        <script src={% static "main/js/mixitup.min.js" %}></script>
+        <script src={% static "main/js/jquery-ui.min.js" %}></script>
+        <script src={% static "main/js/jquery.nice-select.min.js" %}></script>
+        <script src={% static "main/js/jquery.slicknav.js" %}></script>
+        <script src={% static "main/js/owl.carousel.min.js" %}></script>
+        <script src={% static "main/js/jquery.richtext.min.js" %}></script>
+        <script src={% static "main/js/image-uploader.min.js" %}></script>
+        <script src={% static "main/js/main.js" %}></script>
+    </body>
+    
+    </html>
